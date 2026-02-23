@@ -25,7 +25,7 @@ find_package(OpenCV REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(PCL REQUIRED)
 
-set(AIRSIM_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../../../)
+set(AIRSIM_ROOT $ENV{HOME}/Cosys-AirSim)
 
 add_subdirectory("${AIRSIM_ROOT}/cmake/rpclib_wrapper" rpclib_wrapper)
 add_subdirectory("${AIRSIM_ROOT}/cmake/AirLib" AirLib)
